@@ -19,8 +19,8 @@
 		FB97B4232797041400380E2F /* TrekrMultiPlatforApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrekrMultiPlatforApp.swift; sourceTree = "<group>"; };
 		FB97B4242797041400380E2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB97B4252797043500380E2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FB97B42A2797043600380E2F /* TrekrMultiPlatfor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrekrMultiPlatfor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB97B4302797043600380E2F /* TrekrMultiPlatfor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrekrMultiPlatfor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB97B42A2797043600380E2F /* TrekrMultiPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrekrMultiPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB97B4302797043600380E2F /* TrekrMultiPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrekrMultiPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB97B4322797043600380E2F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				FB97B4232797041400380E2F /* TrekrMultiPlatforApp.swift */,
-				FB97B4242797041400380E2F /* ContentView.swift */,
+				FB97B4422797047200380E2F /* Model */,
+				FB97B4412797045D00380E2F /* Views */,
 				FB97B4252797043500380E2F /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -64,8 +65,8 @@
 		FB97B42B2797043600380E2F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB97B42A2797043600380E2F /* TrekrMultiPlatfor.app */,
-				FB97B4302797043600380E2F /* TrekrMultiPlatfor.app */,
+				FB97B42A2797043600380E2F /* TrekrMultiPlatform.app */,
+				FB97B4302797043600380E2F /* TrekrMultiPlatform.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,12 +79,27 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		FB97B4412797045D00380E2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB97B4242797041400380E2F /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB97B4422797047200380E2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB97B4292797043500380E2F /* TrekrMultiPlatfor (iOS) */ = {
+		FB97B4292797043500380E2F /* TrekrMultiPlatform (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB97B43B2797043600380E2F /* Build configuration list for PBXNativeTarget "TrekrMultiPlatfor (iOS)" */;
+			buildConfigurationList = FB97B43B2797043600380E2F /* Build configuration list for PBXNativeTarget "TrekrMultiPlatform (iOS)" */;
 			buildPhases = (
 				FB97B4262797043500380E2F /* Sources */,
 				FB97B4272797043500380E2F /* Frameworks */,
@@ -93,14 +109,14 @@
 			);
 			dependencies = (
 			);
-			name = "TrekrMultiPlatfor (iOS)";
+			name = "TrekrMultiPlatform (iOS)";
 			productName = "TrekrMultiPlatfor (iOS)";
-			productReference = FB97B42A2797043600380E2F /* TrekrMultiPlatfor.app */;
+			productReference = FB97B42A2797043600380E2F /* TrekrMultiPlatform.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FB97B42F2797043600380E2F /* TrekrMultiPlatfor (macOS) */ = {
+		FB97B42F2797043600380E2F /* TrekrMultiPlatform (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB97B43E2797043600380E2F /* Build configuration list for PBXNativeTarget "TrekrMultiPlatfor (macOS)" */;
+			buildConfigurationList = FB97B43E2797043600380E2F /* Build configuration list for PBXNativeTarget "TrekrMultiPlatform (macOS)" */;
 			buildPhases = (
 				FB97B42C2797043600380E2F /* Sources */,
 				FB97B42D2797043600380E2F /* Frameworks */,
@@ -110,9 +126,9 @@
 			);
 			dependencies = (
 			);
-			name = "TrekrMultiPlatfor (macOS)";
+			name = "TrekrMultiPlatform (macOS)";
 			productName = "TrekrMultiPlatfor (macOS)";
-			productReference = FB97B4302797043600380E2F /* TrekrMultiPlatfor.app */;
+			productReference = FB97B4302797043600380E2F /* TrekrMultiPlatform.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +149,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FB97B4212797041300380E2F /* Build configuration list for PBXProject "TrekrMultiPlatfor" */;
+			buildConfigurationList = FB97B4212797041300380E2F /* Build configuration list for PBXProject "TrekrMultiPlatform" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,8 +162,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB97B4292797043500380E2F /* TrekrMultiPlatfor (iOS) */,
-				FB97B42F2797043600380E2F /* TrekrMultiPlatfor (macOS) */,
+				FB97B4292797043500380E2F /* TrekrMultiPlatform (iOS) */,
+				FB97B42F2797043600380E2F /* TrekrMultiPlatform (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -326,7 +342,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.stevenzhang.TrekrMultiPlatfor;
-				PRODUCT_NAME = TrekrMultiPlatfor;
+				PRODUCT_NAME = TrekrMultiPlatform;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -356,7 +372,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.stevenzhang.TrekrMultiPlatfor;
-				PRODUCT_NAME = TrekrMultiPlatfor;
+				PRODUCT_NAME = TrekrMultiPlatform;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -386,7 +402,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.stevenzhang.TrekrMultiPlatfor;
-				PRODUCT_NAME = TrekrMultiPlatfor;
+				PRODUCT_NAME = TrekrMultiPlatform;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -414,7 +430,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.stevenzhang.TrekrMultiPlatfor;
-				PRODUCT_NAME = TrekrMultiPlatfor;
+				PRODUCT_NAME = TrekrMultiPlatform;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -424,7 +440,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB97B4212797041300380E2F /* Build configuration list for PBXProject "TrekrMultiPlatfor" */ = {
+		FB97B4212797041300380E2F /* Build configuration list for PBXProject "TrekrMultiPlatform" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB97B4392797043600380E2F /* Debug */,
@@ -433,7 +449,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB97B43B2797043600380E2F /* Build configuration list for PBXNativeTarget "TrekrMultiPlatfor (iOS)" */ = {
+		FB97B43B2797043600380E2F /* Build configuration list for PBXNativeTarget "TrekrMultiPlatform (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB97B43C2797043600380E2F /* Debug */,
@@ -442,7 +458,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB97B43E2797043600380E2F /* Build configuration list for PBXNativeTarget "TrekrMultiPlatfor (macOS)" */ = {
+		FB97B43E2797043600380E2F /* Build configuration list for PBXNativeTarget "TrekrMultiPlatform (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB97B43F2797043600380E2F /* Debug */,
