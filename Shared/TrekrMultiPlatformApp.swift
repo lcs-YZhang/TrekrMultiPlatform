@@ -8,11 +8,14 @@
 import SwiftUI
 
 @main
-struct TrekrMultiPlatforApp: App {
+struct TrekrMultiPlatformApp: App {
+    
+    @StateObject var store = LocationStore()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                LocationDetail(location: Location.example)
+                LocationsList(store: store)
             }
         }
     }
