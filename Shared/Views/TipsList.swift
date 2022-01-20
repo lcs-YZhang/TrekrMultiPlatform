@@ -12,7 +12,7 @@ struct TipsList: View {
     let tips: [Tip]
     
     var body: some View {
-        List(tips, id: \.text) { tip in
+        List(tips, id: \.text, children: \.children) { tip in
             
             if tip.children != nil {
                 Label(tip.text, systemImage: "quote.bubble")
